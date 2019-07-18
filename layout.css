@@ -1,0 +1,114 @@
+ .parent{
+ 	display: flex;
+ 	flex-wrap:wrap;
+ 	flex-direction:row;
+ 	justify-content:space-around;
+ }
+ .shape{
+ 	width: auto;
+ 	position: relative;
+ }
+ 
+.square{
+	width:120px;
+	height:120px;
+	background-color:red;
+	opacity: 0.5;
+	position: absolute;
+}
+.square2{
+	width:120px;
+	height:120px;
+	background-color:red;
+	opacity: 0.5;
+	position: relative;
+	left: 70px;
+    top: 50px;
+}
+.circle{
+	width: 120px;
+	height: 120px;
+	left: 70px;
+    top: 50px;
+	background-color: red;
+	position: absolute;	
+	opacity: 0.5;
+	border-radius: 60px;
+}
+
+
+
+button {
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    padding: 5px 10px 8px 10px;
+    font-size: 22px;
+  }
+
+button:hover {
+   border: 1px solid green;
+  }
+
+button:focus{
+	 background-color: green;
+	 color: white;
+	 border: 1px solid green;
+}
+button:disabled,
+button[disabled]{
+	opacity: 0.4;
+	 background-color: white;
+	 color: solid green;
+	 border: 1px solid green;
+}
+
+.container {
+  display: flex;
+  flex-direction:column;
+  align-content:space-between;
+  
+}
+.container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80vh;
+ 
+}
+#square{
+	width:100px;
+	height:100px;
+	background-color:red;
+	opacity: 0.5;
+	flex-basis:auto;
+}
+
+
+@media screen and (max-width: 576px){
+	.button{
+		display:flex;
+	}
+	.parent{
+		flex-wrap:wrap;
+	}
+
+}
+@media screen and (max-width: 992px){
+	.button{
+		display: flex;
+	}
+
+}
+@media screen and (max-width: 1200px){
+	.button{
+		display: flex;
+	}
+
+}
+
+  
+ 
+
+
+
